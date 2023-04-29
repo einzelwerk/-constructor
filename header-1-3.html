@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/header-1.css">
+    <script defer src="./assets/scripts/header-1.js"></script>
+  </head>
+  <body>
+    <!-- Добавить к block класс block_dark-->
+    <!-- Добавить к select-nav класс select-nav_dark-->
+    <!-- Заменить класс btn_black на btn_white-->
+    <!-- Добавить к header__burger класс header__burger_dark-->
+    <header class="header block">
+      <div class="header__container container"><a class="header__logo" href="#"> <img class="header__logo-img" src="http://via.placeholder.com/158x36" alt=""></a>
+        <nav class="header__nav"> 
+          <ul class="header__nav-list"> 
+            <li class="header__nav-item"> 
+              <div class="select select-nav">
+                <div data-value="">Locations</div>
+                <div data-value="link1"><a class="header__nav-link" href="#">Link 1</a></div>
+                <div data-value="link2"><a class="header__nav-link" href="#">Link 2</a></div>
+                <div data-value="link3"><a class="header__nav-link" href="#">Link 3</a></div>
+                <div data-value="link4"><a class="header__nav-link" href="#">Link 4</a></div>
+              </div>
+            </li>
+            <li class="header__nav-item"> <a class="header__nav-link" href="#">Restaurant</a></li>
+            <li class="header__nav-item"> 
+              <div class="select select-nav">
+                <div data-value="">Services</div>
+                <div data-value="link1"><a class="header__nav-link" href="#">Link 1</a></div>
+                <div data-value="link2"><a class="header__nav-link" href="#">Link 2</a></div>
+              </div>
+            </li>
+            <li class="header__nav-item"> <a class="header__nav-link" href="#">Menu</a></li>
+            <li class="header__nav-item"> <a class="header__nav-link" href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="header__contacts"><a class="header__contacts-tel btn btn_medium" href="#">Call us</a>
+          <button class="header__contacts-btn btn btn_medium btn_black" type="button">
+             Book a table
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" d="M3.33398 7.99992H12.6673M12.6673 7.99992L8.00065 3.33325M12.6673 7.99992L8.00065 12.6666"></path>
+            </svg>
+          </button>
+        </div>
+        <button class="header__contacts-btn header__contacts-btn_mobile btn btn_medium btn_black" type="button">
+           Book a table
+          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" d="M3.33398 7.99992H12.6673M12.6673 7.99992L8.00065 3.33325M12.6673 7.99992L8.00065 12.6666"></path>
+          </svg>
+        </button>
+        <button class="header__burger" type="button">   <span class="header__burger-item"></span><span class="header__burger-item"></span><span class="header__burger-item"></span></button>
+      </div>
+    </header>
+  </body>
+</html>

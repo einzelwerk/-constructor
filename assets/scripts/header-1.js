@@ -31,7 +31,7 @@ var SingleSelect = /*#__PURE__*/function () {
     this.optionsCollection = [];
     this.currentHeadOption = null;
     _classPrivateMethodGet(this, _initializeStructure, _initializeStructure2).call(this);
-    this.customSelect.addEventListener('click', this.toggleSelect.bind(this));
+    document.addEventListener('click', this.toggleSelect.bind(this));
     this.optionsCollection.forEach(function (option) {
       option.addEventListener('click', _this.changeOption.bind(_this, option));
     });
@@ -40,10 +40,9 @@ var SingleSelect = /*#__PURE__*/function () {
     key: "toggleSelect",
     value: function toggleSelect(event) {
       if (!this.selectHead.contains(event.target)) {
-        this.customSelect.classList.remove('is-open');
+        this.customSelect.classList.toggle('is-open', false);
         return;
       }
-      event.preventDefault();
       this.customSelect.classList.toggle('is-open');
     }
   }, {
@@ -81,14 +80,13 @@ function _initializeStructure2() {
     _this2.selectBody.append(newOptionEl);
     return newOptionEl;
   });
-  var placeholderOption = this.optionsCollection.find(function (opt) {
+  var placehlderOption = this.optionsCollection.find(function (opt) {
     return !opt.dataset.value;
   }) || this.optionsCollection[0].cloneNode(true);
   this.optionsCollection[0].classList.add('is-selected');
-  placeholderOption.classList.replace('select__option_body', 'select__option_head');
-  this.currentHeadOption = placeholderOption.cloneNode(true);
+  placehlderOption.classList.replace('select__option_body', 'select__option_head');
+  this.currentHeadOption = placehlderOption;
   this.selectHead.append(this.currentHeadOption);
-  placeholderOption.remove();
   this.originalSelect.replaceWith(this.customSelect);
   var widthCol = this.optionsCollection.map(function (opt) {
     return opt.scrollWidth;
