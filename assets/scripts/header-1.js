@@ -2,6 +2,25 @@
 /******/ 	"use strict";
 var __webpack_exports__ = {};
 
+;// CONCATENATED MODULE: ./src/scripts/modules/burgerMenu.js
+function toggleMenu() {
+  var menu = document.querySelector(".menu");
+  var btn = document.querySelector(".header__burger");
+  document.addEventListener('click', function (e) {
+    if (btn.contains(e.target)) {
+      menu.classList.toggle('menu_active');
+      if (document.body.style.overflow) {
+        document.body.style.overflow = 'hidden';
+        return;
+      }
+      document.body.style.overflow = null;
+      return;
+    }
+    if (!menu.classList.contains('menu_active')) return;
+    menu.classList.remove('menu_active');
+    document.body.style.overflow = null;
+  });
+}
 ;// CONCATENATED MODULE: ./src/scripts/vendor/select/SingleSelect.js
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -48,6 +67,7 @@ var SingleSelect = /*#__PURE__*/function () {
   }, {
     key: "changeOption",
     value: function changeOption(optionElement) {
+      if (this.selectHead.contains(optionElement)) return;
       this.optionsCollection.forEach(function (option) {
         option.classList.toggle('is-selected', option === optionElement);
       });
@@ -122,6 +142,8 @@ var Select = /*#__PURE__*/function () {
 }();
 ;// CONCATENATED MODULE: ./src/scripts/components/header-1.js
 
+
 new Select('.select');
+toggleMenu();
 /******/ })()
 ;
