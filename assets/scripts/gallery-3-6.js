@@ -8691,9 +8691,9 @@ function EffectCards({
 
 
 
-;// CONCATENATED MODULE: ./src/scripts/components/gallery-3.6.js
+;// CONCATENATED MODULE: ./src/scripts/components/gallery-3-6.js
 
-new core('.swiper', {
+new core('.gallery-3_6 .swiper', {
   modules: [Autoplay],
   autoplay: {
     delay: 5000

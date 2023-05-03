@@ -8693,17 +8693,17 @@ function EffectCards({
 
 ;// CONCATENATED MODULE: ./src/scripts/components/hero-5.js
 
-new core('.swiper', {
+new core('.hero-5 .swiper', {
   modules: [Navigation, Autoplay],
   navigation: {
-    prevEl: '.hero__slider-btn_prev',
-    nextEl: '.hero__slider-btn_next'
+    prevEl: '.hero-5__slider-btn_prev',
+    nextEl: '.hero-5__slider-btn_next'
   },
   autoplay: {
     delay: 5000
   },
   speed: 1500,
-  spaceBetween: 15,
+  spaceBetween: 0,
   keyboard: true,
   rewind: true,
   simulateTouch: false

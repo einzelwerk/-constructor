@@ -8706,18 +8706,18 @@ var breakpointsMax = {
   md: breakpointsMin.md - 0.02,
   sm: breakpointsMin.sm - 0.02
 };
-;// CONCATENATED MODULE: ./src/scripts/components/gallery-5.2.js
+;// CONCATENATED MODULE: ./src/scripts/components/gallery-5-2.js
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 
-new core('.swiper', {
+new core('.gallery-5_2 .swiper', {
   modules: [Navigation, Autoplay],
   navigation: {
-    prevEl: '.gallery__slider-btn_prev',
-    nextEl: '.gallery__slider-btn_next'
+    prevEl: '.gallery-5__slider-btn_prev',
+    nextEl: '.gallery-5__slider-btn_next'
   },
   autoplay: {
     delay: 5000
@@ -8727,7 +8727,6 @@ new core('.swiper', {
   spaceBetween: 12,
   keyboard: true,
   loop: true,
-  simulateTouch: false,
   centeredSlides: true,
   breakpoints: _defineProperty({}, breakpointsMin.md, {
     spaceBetween: 30,

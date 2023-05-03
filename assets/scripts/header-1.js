@@ -143,7 +143,7 @@ var Select = /*#__PURE__*/function () {
 ;// CONCATENATED MODULE: ./src/scripts/components/header-1.js
 
 
-new Select('.select');
+new Select('.header-1 .select');
 toggleMenu();
 /******/ })()
 ;

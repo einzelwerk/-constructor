@@ -8693,11 +8693,11 @@ function EffectCards({
 
 ;// CONCATENATED MODULE: ./src/scripts/components/blog-3-1.js
 
-new core('.swiper', {
+new core('.blog-3_1 .swiper', {
   modules: [Navigation],
   navigation: {
-    prevEl: '.blog__slider-btn_prev',
-    nextEl: '.blog__slider-btn_next'
+    prevEl: '.blog-3__slider-btn_prev',
+    nextEl: '.blog-3__slider-btn_next'
   },
   speed: 1500,
   spaceBetween: 12,
