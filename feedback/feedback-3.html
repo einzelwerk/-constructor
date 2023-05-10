@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/feedback/feedback-3.css">
+    <script defer src="../assets/scripts/base.js"></script>
+    <script defer src="../assets/scripts/feedback/feedback-3.js"></script>
+  </head>
+  <body>
+    <!-- Добавить к block класс block_dark-->
+    <!-- Заменить класс btn_black на btn_white-->
+    <section class="feedback-3 section block">
+      <div class="feedback-3__container container">
+        <div class="row feedback-3__list">
+          <div class="col-6 col-xl-7 col-lg feedback-3__item-order"> 
+            <div class="feedback-3__content"> 
+              <div class="feedback-3__text-block"> 
+                <h2 class="feedback-3__title">Get in touch</h2>
+                <p class="feedback-3__desc">Our friendly team would love to hear from you.</p>
+              </div>
+              <form class="feedback-3__form" action="#"> 
+                <div class="feedback-3__field-block">
+                  <div class="feedback-3__field-block-row">
+                    <div class="feedback-3__field"> 
+                      <label class="visually-hidden" for="feedback-name">First name </label>
+                      <input id="feedback-name" type="text" placeholder="Name">
+                    </div>
+                    <div class="feedback-3__field"> 
+                      <label class="visually-hidden" for="feedback-surname">Last name</label>
+                      <input id="feedback-surname" type="text" placeholder="Surname">
+                    </div>
+                  </div>
+                  <div class="feedback-3__field"> 
+                    <label class="visually-hidden" for="feedback-email">Email</label>
+                    <input id="feedback-email" type="email" placeholder="Email">
+                  </div>
+                  <div class="feedback-3__field"> 
+                    <label class="visually-hidden" for="feedback-tel">Phone number</label>
+                    <input id="feedback-tel" type="tel" placeholder="Phone number">
+                  </div>
+                  <div class="feedback-3__field"> 
+                    <label class="visually-hidden" for="feedback-message">Message</label>
+                    <textarea id="feedback-message" name="message" placeholder="Message" rows="1"></textarea>
+                  </div>
+                </div>
+                <div class="feedback-3__bottom"> 
+                      <label class="checkbox">
+                        <input class="visually-hidden checkbox__flag" type="checkbox"><span class="checkbox__custom"> 
+                          <svg class="checkbox__custom-icon" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.4375 1.125L3.85156 5.5L1.5625 3.3125" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></span><span class="checkbox__text">You agree to our friendly privacy policy.</span>
+                      </label>
+                  <button class="feedback-3__btn btn btn_large btn_black" type="submit">Send message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-6 col-xl-5 col-lg">
+            <picture class="feedback-3__img-wrap"><img class="feedback-3__img" src="../assets/img/feedback/img-3.jpg" alt=""></picture>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
