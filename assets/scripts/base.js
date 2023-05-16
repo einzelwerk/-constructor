@@ -8957,8 +8957,6 @@ var fslightbox = __webpack_require__(213);
 
 
 
-// Инициализируйте его с необходимыми настройками
-
 window.helpFunctions = {
   swiper: {
     Swiper: core,
@@ -8966,12 +8964,12 @@ window.helpFunctions = {
     Autoplay: Autoplay,
     Pagination: Pagination
   },
-  Select: Select,
   breakpointsMin: breakpointsMin,
   initAcc: initAcc,
   toggleMenu: toggleMenu,
   openModal: openModal
 };
+new Select('.select');
 window.helpFunctions.openModal();
 window.helpFunctions.toggleMenu();
 window.helpFunctions.initAcc();
