@@ -1,6 +1,6 @@
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
-new window.helpFunctions.swiper.Swiper('.hero-4 .swiper', {
+var hero4Swiper = new window.helpFunctions.swiper.Swiper('.hero-4 .swiper', {
   modules: [window.helpFunctions.swiper.Pagination, window.helpFunctions.swiper.Autoplay],
   pagination: {
     clickable: true,
@@ -18,5 +18,12 @@ new window.helpFunctions.swiper.Swiper('.hero-4 .swiper', {
   rewind: true,
   simulateTouch: false
 });
+if (hero4Swiper.slides.length <= 1) {
+  // Отключение navigation и pagination
+  hero4Swiper.pagination.destroy();
+
+  // Скрытие элементов navigation и pagination
+  document.querySelector('.hero-4__slider-pagination').style.display = 'none';
+}
 /******/ })()
 ;

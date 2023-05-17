@@ -8969,8 +8969,7 @@ window.helpFunctions = {
   toggleMenu: toggleMenu,
   openModal: openModal
 };
-var base_select = new Select('.header-select');
-base_select.setMinWidth();
+new Select('.header-select');
 window.helpFunctions.openModal();
 window.helpFunctions.toggleMenu();
 window.helpFunctions.initAcc();
