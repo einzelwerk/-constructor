@@ -8759,7 +8759,7 @@ var SingleSelect = /*#__PURE__*/function () {
     _classPrivateMethodInitSpec(this, _initializeOriginStructure);
     _classPrivateMethodInitSpec(this, _initializeStructure);
     this.originSelect = selectElement;
-    this.select = null;
+    this.initialSelect = null;
     this.customSelect = null;
     this.selectHead = null;
     this.selectBody = null;
@@ -8796,7 +8796,7 @@ var SingleSelect = /*#__PURE__*/function () {
         this.selectHead.append(newHeadOption);
       }
       this.currentHeadOption = newHeadOption;
-      var selectedOption = _toConsumableArray(this.select.options).find(function (option) {
+      var selectedOption = _toConsumableArray(this.initialSelect.options).find(function (option) {
         return option.dataset.id === currentOption.dataset.id;
       }) || this.optionsCollection[0];
       selectedOption.selected = true;
@@ -8841,7 +8841,7 @@ function _initializeOriginStructure2() {
     option.setAttribute('value', rawOption.dataset.value);
     select.append(option);
   });
-  this.select = select;
+  this.initialSelect = select;
   this.customSelect.prepend(select);
 }
 ;// CONCATENATED MODULE: ./src/scripts/vendor/select/Select.js
@@ -8969,7 +8969,8 @@ window.helpFunctions = {
   toggleMenu: toggleMenu,
   openModal: openModal
 };
-new Select('.select');
+var base_select = new Select('.header-select');
+base_select.setMinWidth();
 window.helpFunctions.openModal();
 window.helpFunctions.toggleMenu();
 window.helpFunctions.initAcc();
