@@ -16,25 +16,39 @@
         <div class="header-1-4__container container"><a class="header-1-4__logo" href="#"> <img class="header-1-4__logo-img" src="http://via.placeholder.com/158x36" alt=""></a>
           <nav class="header-1-4__nav"> 
             <ul class="header-1-4__nav-list"> 
-              <li class="header-1-4__nav-item"> 
-                <div class="select select-nav header-select">
-                  <button data-value="" type="button">Locations</button>
-                  <button data-value="link1" type="button"><a class="header-1-4__nav-link" href="#">Link 1</a></button>
-                  <button data-value="link2" type="button"><a class="header-1-4__nav-link" href="#">Link 2</a></button>
-                  <button data-value="link3" type="button"><a class="header-1-4__nav-link" href="#">Link 3</a></button>
-                  <button data-value="link4" type="button"><a class="header-1-4__nav-link" href="#">Link 4</a></button>
-                </div>
-              </li>
-              <li class="header-1-4__nav-item"> <a class="header-1-4__nav-link" href="#">Restaurant</a></li>
-              <li class="header-1-4__nav-item"> 
-                <div class="select select-nav header-select">
-                  <button data-value="" type="button">Services</button>
-                  <button data-value="link1" type="button"><a class="header-1-4__nav-link" href="#">Link 1 Link 1 Link 1</a></button>
-                  <button data-value="link2" type="button"><a class="header-1-4__nav-link" href="#">Link 2</a></button>
-                </div>
-              </li>
-              <li class="header-1-4__nav-item"> <a class="header-1-4__nav-link" href="#">Menu</a></li>
-              <li class="header-1-4__nav-item"> <a class="header-1-4__nav-link" href="#">Contacts</a></li>
+                  <li class="header-1-1__nav-item nav-popup"><a class="header-1-4__nav-item" href="#">Locations</a>
+                    <button class="nav-popup__btn" type="button"> 
+                      <svg class="nav-popup__icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 6L8 11L3 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                    <div class="nav-popup__content">
+                      <ul class="nav-popup__list">
+                        <li class="nav-popup__item"><a class="nav-popup__link" href="#">Link 1</a></li>
+                        <li class="nav-popup__item"><a class="nav-popup__link" href="#">Link 2</a></li>
+                        <li class="nav-popup__item"><a class="nav-popup__link" href="#">Link 3</a></li>
+                        <li class="nav-popup__item"><a class="nav-popup__link" href="#">Link 4</a></li>
+                      </ul>
+                    </div>
+                  </li>
+              <li class="header-1-4__nav-item nav-popup-item"> <a class="header-1-4__nav-link" href="#">Restaurant</a></li>
+                  <li class="header-1-1__nav-item nav-popup"><a class="header-1-4__nav-item" href="#">Locations</a>
+                    <button class="nav-popup__btn" type="button"> 
+                      <svg class="nav-popup__icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 6L8 11L3 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                    <div class="nav-popup__content">
+                      <ul class="nav-popup__list">
+                        <li class="nav-popup__item"><a class="nav-popup__link" href="#">Link 1</a></li>
+                        <li class="nav-popup__item"><a class="nav-popup__link" href="#">Link 2</a></li>
+                        <li class="nav-popup__item"><a class="nav-popup__link" href="#">Link 3</a></li>
+                        <li class="nav-popup__item"><a class="nav-popup__link" href="#">Link 4</a></li>
+                      </ul>
+                    </div>
+                  </li>
+              <li class="header-1-4__nav-item nav-popup-item"> <a class="header-1-4__nav-link" href="#">Menu</a></li>
+              <li class="header-1-4__nav-item nav-popup-item"> <a class="header-1-4__nav-link" href="#">Contacts</a></li>
             </ul>
           </nav>
           <div class="header-1-4__contacts"><a class="header-1-4__contacts-tel btn btn_medium" href="#">Call us</a>
@@ -51,18 +65,56 @@
               <path stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" d="M3.33398 7.99992H12.6673M12.6673 7.99992L8.00065 3.33325M12.6673 7.99992L8.00065 12.6666"></path>
             </svg>
           </button>
-          <button class="header-1-4__burger" type="button">   <span class="header-1-4__burger-item"></span><span class="header-1-4__burger-item"></span><span class="header-1-4__burger-item"></span></button>
               <div class="menu">
-                <div class="menu__container container">
-                  <nav class="menu__nav">
-                    <ul class="menu__nav-list">
-                      <li class="menu__nav-item"><a class="menu__nav-link" href="#">Locations</a></li>
-                      <li class="menu__nav-item"><a class="menu__nav-link" href="#">Restaurant</a></li>
-                      <li class="menu__nav-item"><a class="menu__nav-link" href="#">Services</a></li>
-                      <li class="menu__nav-item"><a class="menu__nav-link" href="#">Menu</a></li>
-                      <li class="menu__nav-item"><a class="menu__nav-link" href="#">Contacts</a></li>
+                <button class="menu__burger" type="button">   
+                  <div class="menu__burger__content"><span class="menu__burger-item"></span><span class="menu__burger-item"></span><span class="menu__burger-item"></span></div>
+                </button>
+                <div class="menu__content">
+                  <div class="menu__container container">
+                    <ul class="acc menu__nav">
+                      <li class="menu__nav-item acc__item"> 
+                        <div class="acc__head"> <a class="menu__nav-link" href="#">Locations</a>
+                          <button class="menu__nav-btn acc__trigger" type="button"> 
+                            <svg class="menu__nav-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13 6L8 11L3 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="acc__body">
+                          <div class="acc__content">
+                            <ul class="menu__more">
+                              <li class="menu__more-item"><a class="menu__more-link" href="#">Link 1</a></li>
+                              <li class="menu__more-item"><a class="menu__more-link" href="#">Link 2</a></li>
+                              <li class="menu__more-item"><a class="menu__more-link" href="#">Link 3</a></li>
+                              <li class="menu__more-item"><a class="menu__more-link" href="#">Link 4</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="menu__nav-item menu__nav-item_normal"><a class="menu__nav-link" href="#">Locataion</a></li>
+                      <li class="menu__nav-item menu__nav-item_normal"><a class="menu__nav-link" href="#">Restaurant</a></li>
+                      <li class="menu__nav-item acc__item"> 
+                        <div class="acc__head"> <a class="menu__nav-link" href="#">Services</a>
+                          <button class="menu__nav-btn acc__trigger" type="button"> 
+                            <svg class="menu__nav-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13 6L8 11L3 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </button>
+                        </div>
+                        <div class="acc__body">
+                          <div class="acc__content">
+                            <ul class="menu__more">
+                              <li class="menu__more-item"><a class="menu__more-link" href="#">Link 1</a></li>
+                              <li class="menu__more-item"><a class="menu__more-link" href="#">Link 2</a></li>
+                              <li class="menu__more-item"><a class="menu__more-link" href="#">Link 3</a></li>
+                              <li class="menu__more-item"><a class="menu__more-link" href="#">Link 4</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="menu__nav-item menu__nav-item_normal"><a class="menu__nav-link" href="#">Menu </a></li>
                     </ul>
-                  </nav>
+                  </div>
                 </div>
               </div>
         </div>
