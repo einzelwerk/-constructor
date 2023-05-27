@@ -14,7 +14,7 @@ new window.helpFunctions.swiper.Swiper('.swiper.gallery-7-1__slider', {
     delay: 5000
   },
   speed: 1000,
-  slidesPerView: 1.112,
+  slidesPerView: 'auto',
   spaceBetween: 12,
   keyboard: true,
   loop: true,
