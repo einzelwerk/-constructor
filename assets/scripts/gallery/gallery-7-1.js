@@ -14,14 +14,14 @@ new window.helpFunctions.swiper.Swiper('.swiper.gallery-7-1__slider', {
     delay: 5000
   },
   speed: 1000,
-  slidesPerView: 'auto',
+  slidesPerView: 1.112,
   spaceBetween: 12,
   keyboard: true,
   loop: true,
   centeredSlides: true,
   breakpoints: _defineProperty({}, window.helpFunctions.breakpointsMin.md, {
-    spaceBetween: 30,
-    slidesPerView: 1.3
+    slidesPerView: 'auto',
+    spaceBetween: 30
   })
 });
 /******/ })()
